@@ -1,0 +1,139 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "title": "Laravel",
+        "description": "",
+        "version": "1.0.0"
+    },
+    "host": "http:\/\/localhost",
+    "basePath": "\/",
+    "paths": {
+        "\/api\/computer": {
+            "get": {
+                "description": "GET \/api\/computer",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            },
+            "post": {
+                "description": "POST \/api\/computer",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/api\/computer\/create": {
+            "get": {
+                "description": "GET \/api\/computer\/create",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        },
+        "\/api\/computer\/{computer}": {
+            "get": {
+                "description": "GET \/api\/computer\/{computer}",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "computer",
+                        "type": "integer",
+                        "required": true,
+                        "description": ""
+                    }
+                ]
+            },
+            "put": {
+                "description": "PUT \/api\/computer\/{computer}",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "computer",
+                        "type": "integer",
+                        "required": true,
+                        "description": ""
+                    }
+                ]
+            },
+            "patch": {
+                "description": "PATCH \/api\/computer\/{computer}",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "computer",
+                        "type": "integer",
+                        "required": true,
+                        "description": ""
+                    }
+                ]
+            },
+            "delete": {
+                "description": "DELETE \/api\/computer\/{computer}",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "computer",
+                        "type": "integer",
+                        "required": true,
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/api\/computer\/{computer}\/edit": {
+            "get": {
+                "description": "GET \/api\/computer\/{computer}\/edit",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                },
+                "parameters": [
+                    {
+                        "in": "path",
+                        "name": "computer",
+                        "type": "integer",
+                        "required": true,
+                        "description": ""
+                    }
+                ]
+            }
+        },
+        "\/": {
+            "get": {
+                "description": "GET \/",
+                "responses": {
+                    "200": {
+                        "description": "OK"
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+
+   Mtrajano\LaravelSwagger\LaravelSwaggerException  : YAML extension must be loaded to use the yaml output format
+
+  at /var/www/html/sebComputerApi/vendor/mtrajano/laravel-swagger/src/Formatters/YamlFormatter.php:12
+     8| {
+     9|     public function format()
+    10|     {
+    11|         if (!extension_loaded('yaml')) {
+  > 12|             throw new LaravelSwaggerException('YAML extension must be loaded to use the yaml output format');
+    13|         }
+    14| 
+    15|         return yaml_emit($this->docs);
+    16|     }
+
+  Exception trace:
+
+  1   Mtrajano\LaravelSwagger\Formatters\YamlFormatter::format()
+      /var/www/html/sebComputerApi/vendor/mtrajano/laravel-swagger/src/FormatterManager.php:41
+
+  2   Mtrajano\LaravelSwagger\FormatterManager::format()
+      /var/www/html/sebComputerApi/vendor/mtrajano/laravel-swagger/src/GenerateSwaggerDoc.php:37
+
+  Please use the argument -v to see more details.
