@@ -22,9 +22,17 @@ class ComputerController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function create(Request $request)
     {
-        //
+        if (isset($request->brand) && isset($request->model) && isset($request->sku)) {
+            $computer = new Computer();
+            $computer->brand = $request->brand;
+            $computer->model = $request->model;
+            $computer->sku = $request->sku;
+            $computer->save();
+            return response()->json('Item stored successfully', 200);
+        }
+        return response()->json('Error bad request', 400);
     }
 
     /**

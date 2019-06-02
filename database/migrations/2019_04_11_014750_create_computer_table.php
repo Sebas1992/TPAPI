@@ -18,7 +18,6 @@ class CreateComputerTable extends Migration
             $table->string('brand');
             $table->string('model');
             $table->string('sku');
-            $table->timestamps();
         });
     }
 

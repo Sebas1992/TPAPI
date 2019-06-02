@@ -12,7 +12,5 @@
  */
 
 Route::middleware(['api'])->group(function () {
-    Route::post('computer/soap', 'SoapController@index');
-    Route::get('computer/soap', 'SoapController@index');
     Route::resource('computer', 'ComputerController');
 });
